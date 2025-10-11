@@ -18,6 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark scroll-smooth">
+      import Head from "next/head";
+      <head>
+        <meta name="google-site-verification" content="16cmt5lI_8yDMuNyCQix86ERjl-qqTvD_2yanMRhIhg" />
+      </head>
+    
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} antialiased`}>
         <Suspense fallback={null}>{children}</Suspense>
         <Analytics />
